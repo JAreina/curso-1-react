@@ -23,7 +23,7 @@ const Cursos = (props)=>{
                             <Curso  
                             key={curso.id}
                             id={curso.id}
-                            nombre={curso.nombre}
+                            curso={curso.curso}
                             profesor={curso.profesor}
                        />
                         )

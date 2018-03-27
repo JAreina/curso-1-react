@@ -8,7 +8,7 @@ const Curso = (props)=>
            
             <ul>
                
-            <li>{props.id} : {props.nombre} : {props.profesor}</li>
+            <li>{props.id} : {props.curso} : {props.profesor}</li>
             </ul>
             </div>
         )

@@ -12,8 +12,8 @@ class App extends Component{
           
            this.state = {
                  cursos:[
-                     {id:1,nombre:"REACT",profesor:"JAreina"},
-                     {id:2,nombre:"ANGULAR",profesor:"JAreina"}
+                     {id:1,curso:"REACT",profesor:"JAreina"},
+                     {id:2,curso:"ANGULAR",profesor:"JAreina"}
                  ]
            }
            this.addCurso = this.addCurso.bind(this);
@@ -31,11 +31,14 @@ class App extends Component{
                  profesor: formulario.profesor.value
              }
              console.log(cursoNuevo);
+         console.log("PROPIEDAD ID POR DEFECTO : " +App.defaultProps.id);
 
-             // agregar nuevo curso al array de cursos del estado
+             // CAMIBIAR ESTADO. agregar nuevo curso al array de cursos del estado
              this.setState({
                  cursos: this.state.cursos.concat([cursoNuevo])
              })
+
+             formulario.reset();
     }
 
 
@@ -52,9 +55,16 @@ class App extends Component{
         }
 }
 App.propTypes = {
-     
+    cursos: PropTypes.arrayOf(
+                    {id: PropTypes.number.isRequired,
+                    curso: PropTypes.string.isRequired,
+                    profesor: PropTypes.string.isRequired}
+                 )
 };
-App.defaultProps={};
-
+App.defaultProps=
+    {id: 0,
+    curso: 'Ningún curso',
+    profesor: 'Profesor no asignado'}
+ 
 
 export default App;
