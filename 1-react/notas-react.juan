@@ -1,0 +1,44 @@
+
+
+PRODUCCION
+
+npm run production
+
+
+----
+
+************************************************
+
+crear app react
+
+************************************************
+
+npm install -g create-react-app
+
+
+create-react app miApp
+
+cd miApp
+
+npm start
+
+-------
+
+
+YARN
+
+yarn global add nombrepaquete
+yarn add nombrePaquete // dependencia
+yarn add package [--dev/ -D] // dependencia desarrollo
+
+yarn script // correr comando npm
+
+--------------
+
+
+
+PRODUCCION
+
+yarn build  --- genera la carpeta build
+
+

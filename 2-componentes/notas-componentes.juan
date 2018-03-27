@@ -1,0 +1,93 @@
+
+************************************
+COMPONENTES ********************
+************************************
+
+-- PROPIEDADES
+--------------------------------------------------
+
+pasar datos de un padre a un hijo
+son inmutables, no varían en su ciclo de vida
+
+
+
+-propTypes: un objeto, 
+      propiedades de un componente, si son requeridas
+       y tipo de datos.
+
+
+          - primitivos y combinados
+          - validadores especiales
+
+
+-defaultProps: 
+
+
+-- ESTADOS
+-----------------------------------------------------
+
+los componentes tienen un estado en un momento determinado
+es mutable , cuando cambia se renderiza automaticamente
+
+Para cambiar estado el metodo .setState()
+   
+no se hereda.
+
+
+hya componentes con estado y sin estado
+
+-- EVENTOS 
+-----------------------------------------------------
+
+Eventos sintéticos. para modificar el estado 
+de un componente
+
+se disparan de hijos a padres.
+
+instancias de SyntheticEvent
+wrapper de los eventos nativos del navegador
+
+
+funciona en todos los navegadores
+
+     autobinding-------------
+
+       para componentes declarados como clases 
+        usar .bind(this) en el constructor
+
+
+     Delegacion de eventos:
+             
+              onClick, 
+             <button onClick={this.handleClick}>
+
+
+*****************************************
+
+
+- Componentes presentacion  stateless
+        no muestran datos sin estado
+        más fáciles de manejar. recomendados
+        
+        para lo visual, sin depender de datos
+        reciben callbacks a través de props.
+        pueden ser funcionales, 
+
+- Componentes contenedores stateful
+        encapsulas otros componentes, manejan el estado 
+        proporcionan propiedades a oros componentes
+
+        gestionan eventos, comunican con datos
+        contienen ambos tipos de componentes
+
+
+
+-----  cada componente tienen una tarea
+
+         facil reutilizar
+
+    SINTAXIS DE COMPONENTES
+
+    con jsx y  (es5,6,7) 
+    
+        
