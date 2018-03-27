@@ -1,7 +1,7 @@
 {
   "name": "componentes-jareina",
   "version": "0.1.0",
-  "homepage": "http://jareina.github.io/curso-1-react/docs",
+  "homepage": "http://jareina.github.io/curso-1-react",
   "private": true,
   "dependencies": {
     "prop-types": "^15.6.1",
