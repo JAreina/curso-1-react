@@ -91,3 +91,9 @@ funciona en todos los navegadores
     con jsx y  (es5,6,7) 
     
         
+
+        CICLO DE VIDA COMPONENTES
+        
+        -montaje
+        -actualizacion
+        -desmontaje
