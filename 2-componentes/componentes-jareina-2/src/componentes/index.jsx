@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import PropTypes from 'prop-types';
 import Cursos from './cursos/listaCursos'
 import css from './index.css';
-
-
+import uid from 'uid';
+import {cursos} from '../datos/cursosDatos';
 // componente con estado
 
 class App extends Component{
@@ -11,10 +11,7 @@ class App extends Component{
            super(...props);
           
            this.state = {
-                 cursos:[
-                     {id:1,curso:"REACT",profesor:"JAreina"},
-                     {id:2,curso:"ANGULAR",profesor:"JAreina"}
-                 ]
+                cursos:cursos
            }
            this.addCurso = this.addCurso.bind(this);
            
@@ -56,13 +53,13 @@ class App extends Component{
 }
 App.propTypes = {
     cursos: PropTypes.arrayOf(
-                    {id: PropTypes.number.isRequired,
+                    {id: PropTypes.string.isRequired,
                     curso: PropTypes.string.isRequired,
                     profesor: PropTypes.string.isRequired}
                  )
 };
 App.defaultProps=
-    {id: 0,
+    {id: uid(10),
     curso: 'Ningún curso',
     profesor: 'Profesor no asignado'}
  

@@ -1,5 +1,6 @@
 import React from 'react';
 import Curso from './curso';
+import uid from 'uid';
 
 // componente sin estado
 
@@ -11,7 +12,7 @@ const Cursos = (props)=>{
             <form onSubmit={props.addCurso}>
             <input type="text" placeholder="titulo del curso" name="curso"/>
             <input type="text" placeholder="profesor" name="profesor"/>
-            <input type="hidden" name="id" value={Math.floor(Math.random()*100)}/>
+            <input type="hidden" name="id" value={uid(10)}/>
             <input type="submit" value="ok"/>
             </form>
             
