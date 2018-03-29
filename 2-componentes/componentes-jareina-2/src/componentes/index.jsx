@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Cursos from './cursos/listaCursos'
 import css from './index.css';
 import uid from 'uid';
-import {cursos} from '../datos/cursosDatos';
+import {cursos} from '../datos/cursosDatos.json';
 // componente con estado
 
 class App extends Component{
