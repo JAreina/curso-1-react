@@ -1,0 +1,10 @@
+{
+    "cursos":[
+        {"id":1,"curso":"REACT","profesor":"JAreina"},
+        {"id":2,"curso":"ANGULAR","profesor":"JAreina"},
+        {"id":3,"curso":"REACT","profesor":"JAreina"},
+        {"id":4,"curso":"ANGULAR","profesor":"JAreina"}
+
+    ]
+}
+   
