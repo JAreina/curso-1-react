@@ -11,10 +11,12 @@ class App extends Component{
            super(...props);
           
            this.state = {
-                cursos:cursos
+               //cursos:cursos
+               cursos:[]
            }
            this.addCurso = this.addCurso.bind(this);
-           
+           this.cargarCursos = this.cargarCursos.bind(this);
+           this.resetCursos = this.resetCursos.bind(this);
         }
 
     addCurso(event){
@@ -39,16 +41,40 @@ class App extends Component{
     }
 
 
+    cargarCursos(){
+            setTimeout(()=> this.setState({cursos:cursos}),1000)
+    }
+
+    resetCursos(){
+            this.setState({
+                cursos: []
+            })
+    }
+
 
 
         render(){
-               return( 
-               <Cursos 
-               cursos={this.state.cursos}
-               addCurso={this.addCurso}//evento
-               />
+            if(!this.state.cursos.length){
+                return (
+                    <div>
+                        <p>NO HAY CURSOS</p>
+                        <button onClick={this.cargarCursos}>CARGAR CURSOS</button>
+                        </div>
+                )
+
+            }else{
+                return( 
+                    <section>
+                    <Cursos 
+                    cursos={this.state.cursos}
+                    addCurso={this.addCurso}//evento
+                    />
+                    <button onClick={this.resetCursos}>BORRARR CURSOS</button>
+                     </section>
+                      )
+
+            }
                
-                 )
         }
 }
 App.propTypes = {
