@@ -4,6 +4,10 @@ import Cursos from './cursos/listaCursos'
 import css from './index.css';
 import uid from 'uid';
 import {cursos} from '../datos/cursosDatos.json';
+
+import $ from 'jquery';
+
+
 // componente con estado
 
 class App extends Component{
@@ -42,15 +46,21 @@ class App extends Component{
 
 
     cargarCursos(){
-            setTimeout(()=> this.setState({cursos:cursos}),1000)
+            //setTimeout(()=> this.setState({cursos:cursos}),1000);
+            $('#root').fadeOut(1000,()=> this.setState({cursos:cursos})).fadeIn()
     }
 
     resetCursos(){
-            this.setState({
-                cursos: []
-            })
+          //  this.setState({ cursos: []})
+            $('#root').fadeOut(1000,()=> this.setState({cursos:[]})).fadeIn()
     }
 
+
+    // se ejecuta despues del primer rendenr. METODO DEL CICLO DE VIDA DEL COMPONNETE
+    componentDidMount(){
+        console.log("metodo de react  que se ejecuta despues de renderizar el conponente")
+        this.cargarCursos();
+    }
 
 
         render(){
