@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import css from './index.css';
+import './index.css';
 //import App from './componentes/';
 
 //import Navega from './router/router';
