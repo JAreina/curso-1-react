@@ -3,8 +3,13 @@ div.header{
 }
 
 .pure-g{
-    width: 20px;
-    height: 20px;
+    width: 150px;
+    height: 100px;
+}
+
+.pure-g img{
+    max-width: 100%;
+    height: auto;
 }
 .custom-menu-wrapper {
     background-color: teal;
@@ -123,7 +128,7 @@ div.header{
         position: absolute;
         width: 100%;
         border-top: 1px solid #eee;
-        background-color: #808080\9;
+        background-color: teal;
         z-index: 100;
     }
 
