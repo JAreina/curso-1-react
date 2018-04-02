@@ -45,6 +45,7 @@ div.header{
     display: block;
     text-align: center;
     position: relative;
+  
 }
 
 .custom-menu-toggle {
@@ -94,7 +95,7 @@ div.header{
 }
 
 .custom-menu-screen {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(37, 37, 37, 0.5);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -102,7 +103,7 @@ div.header{
     height: 3em;
     width: 70em;
     position: absolute;
-    top: 0;
+    top: 0px;
     z-index: -1;
 }
 
@@ -155,7 +156,7 @@ div.header{
 
     .pure-menu-horizontal.custom-menu-tucked {
         z-index: -1;
-        top: 45px;
+        top:45px;
         position: absolute;
         overflow: hidden;
     }

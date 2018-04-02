@@ -60,7 +60,7 @@ class App extends Component {
                                 <div className="pure-menu custom-menu custom-menu-top">
                                     <a href="#" className="pure-menu-heading custom-menu-brand">
                                     <div className="pure-g">
-                                    <img  className="pure-u-24-24"src={logo} alt="logo"/>
+                                    <img  className="pure-u-12-12"src={logo} alt="logo"/>
                                     </div>
                                     </a>
                                     <a href="#" className="custom-menu-toggle" 
