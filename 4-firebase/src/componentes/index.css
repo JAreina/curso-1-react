@@ -1,8 +1,13 @@
-div{
+div.header{
     background-color: rgb(156, 156, 81);
 }
+
+.pure-g{
+    width: 20px;
+    height: 20px;
+}
 .custom-menu-wrapper {
-    background-color: #808080;
+    background-color: teal;
     margin-bottom: 2.5em;
     white-space: nowrap;
     position: relative;
@@ -118,7 +123,7 @@ div{
         position: absolute;
         width: 100%;
         border-top: 1px solid #eee;
-        background-color: #808080;
+        background-color: #808080\9;
         z-index: 100;
     }
 
