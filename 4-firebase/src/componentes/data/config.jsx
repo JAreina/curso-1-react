@@ -12,5 +12,7 @@ const config = {
 
   firebase.initializeApp(config);
 
-
+  //almacenar usuarios 
+  export const ref= firebase.database().ref();
+// autenticar usuarios
   export const firebaseAuth = firebase.auth;

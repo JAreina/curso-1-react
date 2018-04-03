@@ -58,12 +58,12 @@ class App extends Component {
                     <div className="">
                             <header className="custom-menu-wrapper">
                                 <div className="pure-menu custom-menu custom-menu-top">
-                                    <a href="#" className="pure-menu-heading custom-menu-brand">
+                                    <a  className="pure-menu-heading custom-menu-brand">
                                     <div className="pure-g">
                                     <img  className="pure-u-12-12"src={logo} alt="logo"/>
                                     </div>
                                     </a>
-                                    <a href="#" className="custom-menu-toggle" 
+                                    <a  className="custom-menu-toggle" 
                                     onClick={this.clickMenu}
                                     id="toggle">
                                     
