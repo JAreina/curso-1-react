@@ -1,15 +1,19 @@
 div.header{
     background-color: rgb(156, 156, 81);
 }
-
+.main{
+    padding: 1em;
+}
 .pure-g{
     width: 150px;
     height: 100px;
 }
 
 .pure-g img{
+    display:block;
     max-width: 100%;
-    height: auto;
+    max-height: auto;
+    margin:auto;
 }
 .custom-menu-wrapper {
     background-color: teal;
@@ -114,7 +118,9 @@ div.header{
     transform: translateY(-44px);
 }
 
-@media (max-width: 62em) {
+
+/* 1em == 16px */
+@media (max-width: 64em) {
 
     .custom-menu {
         display: block;

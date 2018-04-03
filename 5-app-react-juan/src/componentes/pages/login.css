@@ -1,0 +1,31 @@
+.AuthForm {
+    max-width: 80vw;
+    margin: auto;
+  }
+  h1{
+      text-align: center;
+  }
+  .AuthForm input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 3px 3px;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    padding:1%;
+    box-sizing: content-box;
+  }
+  
+  .u-error {
+    box-sizing: content-box;
+    width: 98%;
+    padding: 1rem;
+    font-weight: bold;
+    color: rgb(167, 224, 61);
+    ;
+  }
+
+  
+  @media screen and (min-width: 64em) {
+    .AuthForm { max-width: 50vw; }
+  }
