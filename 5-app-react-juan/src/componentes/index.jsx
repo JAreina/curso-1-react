@@ -6,14 +6,14 @@ import {
     Redirect,
     Switch
 } from 'react-router-dom';
-import PropTypes from 'prop-types';
+
 
 
 // css
 import 'pure-css';
 import './index.css';
 
-import $ from 'jquery';
+
 // firebase 
 import { firebaseAuth } from './data/config'
 
@@ -65,7 +65,7 @@ class App extends Component {
 
         this.state = {
             autenticado: false,
-            cagando: false,
+            cagando: true,
             prueba: 'hola'
         }
         this.metodoPrueba = this.metodoPrueba.bind(this);
@@ -159,6 +159,7 @@ class App extends Component {
                                     <PublicRoute autenticado={this.state.autenticado} path="/registro" component={Registro} />
                                     <Route path="/error" component={Error404} />
                                     <PrivateRoute autenticado={this.state.autenticado}  path="/cursos" component={Cursos} />
+                                    <PrivateRoute autenticado={this.state.autenticado}  path="/logout" component={Login} />
                                 </Switch>
                             </main>
 

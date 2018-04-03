@@ -1,12 +1,14 @@
 import {firebaseAuth,ref} from '../data/config';
 
 
-const saveUser = (user)=>(
-    ref.child()
-        .set({
 
+const saveUser = (user)=>(
+    ref.child(`users/${user.uid}/info`)
+        .set({
+         email: user.email,
+         uid: user.uid
         })
-        .then(()=>{})
+        .then(()=>{user})
 )
 
 
