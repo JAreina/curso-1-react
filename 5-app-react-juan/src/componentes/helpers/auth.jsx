@@ -8,7 +8,12 @@ const saveUser = (user)=>(
          email: user.email,
          uid: user.uid
         })
-        .then(()=>{user})
+        .then(()=>{user.sendEmailVerification().then(function() {
+            // Email sent.
+          }).catch(function(error) {
+            // An error happened.
+          });
+          })
 )
 
 

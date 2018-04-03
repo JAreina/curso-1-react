@@ -16,10 +16,15 @@ export default class Login extends Component{
 
 
    reseteaPassword(){
-       resetPassword(this.email.value)
+       if(this.email.value){
+        resetPassword(this.email.value)
         .then(()=>this.setState(this.setMensaje(`SE HA ENVIADO UN CORREO 
         PARA RESTABLECER LA CONTRASEÑA A ${this.email.value}`)))
-        .catch(err=>this.setMensaje(this.setMensaje(`El email ${this.email.value} no está registrado`)))
+        .catch(err=>this.setMensaje(`El email ${this.email.value} no está registrado`))
+       }else{
+        this.setMensaje(`NO HA INGRESADO NINGÚN EMAIL VÁLIDO`)
+       }
+       
    }
      enviar(e){
          e.preventDefault();
@@ -51,7 +56,7 @@ export default class Login extends Component{
                    this.state.loginMensaje && 
                    <div className="u-error">
                         {this.state.loginMensaje}
-                       <a  className="alert-link" onClick={this.reseteaPassword()}>    Recuperar la contraseña </a>
+                       <a  href="#" className="alert-link" onClick={this.reseteaPassword}>    Recuperar la contraseña </a>
                    </div>
                }
                </form>
