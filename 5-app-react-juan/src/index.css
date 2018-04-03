@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: teal;
+  color:rgb(151, 18, 18);
+}
+
+a{
+  color:rgb(20, 18, 18);
+}
+button{
+  display:flex;
+}
