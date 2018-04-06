@@ -31,7 +31,8 @@ class LosCursos extends Component{
              let cursoNuevo= {
                  id: formulario.id.value,
                  name: formulario.name.value,
-                 teacher: formulario.teacher.value
+                 teacher: formulario.teacher.value,
+                 date: formulario.date.value
              }
              console.log(cursoNuevo);
          console.log("PROPIEDAD ID POR DEFECTO : " +LosCursos.defaultProps.id);
@@ -79,7 +80,7 @@ class LosCursos extends Component{
                     cursos={this.state.cursos}
                     addCurso={this.addCurso}//evento
                     />
-                    <button onClick={this.resetCursos}>BORRARR CURSOS</button>
+                    <button onClick={this.resetCursos} className="pure-button pure-button-primary">BORRARR CURSOS</button>
                      </section>
                       )
 
