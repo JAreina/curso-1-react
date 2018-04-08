@@ -34,7 +34,8 @@ class LosCursos extends Component{
                  teacher: formulario.teacher.value,
                  date: formulario.date.value,
                  categories:formulario.categoria.value,
-                 url:formulario.url.value
+                 url:formulario.url.value,
+                 amount:formulario.amount.value
              }
              console.log(cursoNuevo);
          console.log("PROPIEDAD ID POR DEFECTO : " +LosCursos.defaultProps.id);
@@ -96,7 +97,8 @@ LosCursos.propTypes = {
                     name: PropTypes.string.isRequired,
                     teacher: PropTypes.string.isRequired,
                 categories:PropTypes.string.isRequired,
-            url:PropTypes.string.isRequired}
+            url:PropTypes.string.isRequired,
+        amount:PropTypes.string.isRequired}
                  )
 };
 LosCursos.defaultProps=

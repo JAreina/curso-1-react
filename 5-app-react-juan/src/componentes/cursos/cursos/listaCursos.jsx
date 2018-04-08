@@ -65,6 +65,7 @@ const Cursos = (props)=>{
                             date= {curso.date}
                             categories={curso.categories}
                             url={curso.url}
+                            amount={curso.amount}
                        />
                         )
                     )
