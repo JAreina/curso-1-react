@@ -21,6 +21,13 @@ const Cursos = (props)=>{
     }
     
     )
+
+    const opcionesCategorias = categories.map((cate)=>{
+        console.log("cate "+cate);
+       return  Object.assign({},{label: cate,value: cate})
+    }
+    
+    )
         return(
 
             <div>
@@ -30,12 +37,22 @@ const Cursos = (props)=>{
                  name="teacher"
                  placeholder="Selecciona..."
                  options={opcionesProfesores}/>
+                 <SelectMultiple 
+                 name="categoria"
+                 placeholder="Selecciona..."
+                 options={opcionesCategorias}/>
+                 <input type="url" placeholder="poster" name="poster"/>
+                 <input type="url" placeholder="web" name="url"/>
+                 <input type="number" placeholder="costo" name="amount"/>
              <Calendario name="date" />
             <input type="hidden" name="id" value={uid(10)}/>
             <input type="submit" value="ok" className="pure-button pure-button-primary"/>
             </form>
             
+
+              <h1>LISTADO DE CURSOS</  h1>
             <ul className="AuthForm">
+          
                 {
                     
                   props.cursos.map(
@@ -46,6 +63,8 @@ const Cursos = (props)=>{
                             name={curso.name}
                             teacher={curso.teacher}
                             date= {curso.date}
+                            categories={curso.categories}
+                            url={curso.url}
                        />
                         )
                     )

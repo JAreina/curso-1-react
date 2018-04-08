@@ -32,7 +32,9 @@ class LosCursos extends Component{
                  id: formulario.id.value,
                  name: formulario.name.value,
                  teacher: formulario.teacher.value,
-                 date: formulario.date.value
+                 date: formulario.date.value,
+                 categories:formulario.categoria.value,
+                 url:formulario.url.value
              }
              console.log(cursoNuevo);
          console.log("PROPIEDAD ID POR DEFECTO : " +LosCursos.defaultProps.id);
@@ -92,13 +94,16 @@ LosCursos.propTypes = {
     cursos: PropTypes.arrayOf(
                     {id: PropTypes.string.isRequired,
                     name: PropTypes.string.isRequired,
-                    teacher: PropTypes.string.isRequired}
+                    teacher: PropTypes.string.isRequired,
+                categories:PropTypes.string.isRequired,
+            url:PropTypes.string.isRequired}
                  )
 };
 LosCursos.defaultProps=
     {id: uid(10),
     name: 'Ningún curso',
-    teacher: 'Profesor no asignado'}
+    teacher: 'Profesor no asignado',
+categories:"no hay categoria"}
  
 
 export default LosCursos;
