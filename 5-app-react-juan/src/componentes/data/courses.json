@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "Curso PHP7 Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/php-poster.jpg?itok=BNxvEPos",
-      "url": "https://github/cursos/php",
+      "poster": "",
+      "url": " https://jareina.github.io/jareina/",
       "amount": "40",
       "teacher": "Profe AAAA",
       "date": "25/01/2018",
@@ -19,8 +19,8 @@
     {
       "id": 2,
       "name": "Curso Git Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/git-poster_0.jpg?itok=hhP3R72F",
-      "url": "https://github/cursos/git",
+      "poster": "",
+      "url": " https://jareina.github.io/jareina/",
       "amount": "40",
       "teacher": "Profe BBBBBB",
       "date": "29/02/2018",
@@ -35,8 +35,8 @@
     {
       "id": 3,
       "name": "Curso Bases de Datos Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/sql-poster.jpg?itok=5YUH9emm",
-      "url": "https://github/cursos/sql",
+      "poster": "",
+      "url": " https://jareina.github.io/jareina/",
       "amount": "40",
       "teacher": "Profe CCCC",
       "date": "28/03/2018",
@@ -49,8 +49,8 @@
     {
       "id": 4,
       "name": "Curso WordPress Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/wordpress-poster_0.jpg?itok=sTuO173c",
-      "url": "https://github/cursos/wordpress",
+      "poster": "",
+      "url": " https://jareina.github.io/jareina/",
       "amount": "40",
       "teacher": "Profe DDDDD",
       "date": "25/04/2018",
@@ -69,224 +69,13 @@
     {
       "id": 5,
       "name": "Curso Java Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/java-poster.jpg?itok=CXv_HZmX",
-      "url": "https://github/cursos/java",
+      "poster": "",
+      "url": " https://jareina.github.io/jareina/",
       "amount": "40",
       "teacher": "Profe EEEEE",
       "date": "23/05/2018",
       "categories": [
         "Backend",
-        "Web",
-        "Programación",
-        "Frameworks",
-        "Básico"
-      ]
-    },
-    {
-      "id": 6,
-      "name": "Curso Sass Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/sass-poster.jpg?itok=5N2-EjFB",
-      "url": "https://github/cursos/sass",
-      "amount": "40",
-      "teacher": "Profe FFFF",
-      "date": "27/06/2018",
-      "categories": [
-        "Frontend",
-        "Web",
-        "Programación",
-        "Diseño",
-        "Herramientas",
-        "Básico"
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Curso Photoshop Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/photoshop-poster.jpg?itok=ttOE1c6C",
-      "url": "https://github/cursos/photoshop",
-      "amount": "40",
-      "teacher": "Profe GGGGG",
-      "date": "25/07/2018",
-      "categories": [
-        "Diseño",
-        "Herramientas",
-        "Básico"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Curso Node.js Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/nodejs-poster.jpg?itok=CXtyA0Bm",
-      "url": "https://github/cursos/nodejs",
-      "amount": "40",
-      "teacher": "Profe HHHH",
-      "date": "29/08/2018",
-      "categories": [
-        "Frontend",
-        "Backend",
-        "Web",
-        "Programación",
-        "Herramientas",
-        "Frameworks",
-        "Básico"
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Curso Teoria del Diseño Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/design-poster_0.jpg?itok=N91JApxR",
-      "url": "https://github/cursos/design",
-      "amount": "40",
-      "teacher":"Profe IIIII",
-      "date": "26/09/2018",
-      "categories": [
-        "Diseño",
-        "Básico"
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Curso Marketing Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/marketing-poster_1.jpg?itok=1VEsrzUp",
-      "url": "https://github/cursos/marketing",
-      "amount": "40",
-      "teacher": "Profe JJJJJJJ",
-      "date": "24/10/2018",
-      "categories": [
-        "Marketing",
-        "Herramientas",
-        "Básico"
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Curso GO Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/go-poster-720.jpg?itok=SAEbEnMo",
-      "url": "https://github/cursos/go",
-      "amount": "40",
-      "teacher":"Profe CCCC, PROFE ZZZZ",
-      "date": "28/11/2018",
-      "categories": [
-        "Backend",
-        "Web",
-        "Programación",
-        "Básico"
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Curso HTML5 Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/html-poster-720.jpg?itok=UAXq4RCj",
-      "url": "https://github/cursos/html",
-      "amount": "40",
-      "teacher": "Profe CCCCXXX",
-      "date": "10/01/2017",
-      "categories": [
-        "Frontend",
-        "Web",
-        "Básico"
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Curso Illustrator Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/illustrator-poster-720.jpg?itok=uUMnNbNe",
-      "url": "https://github/cursos/illustrator",
-      "amount": "40",
-      "teacher": "Profe CCCCEEEEE",
-      "date": "09/01/2017",
-      "categories": [
-        "Diseño",
-        "Herramientas",
-        "Básico"
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Curso CSS Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/css-poster-720.jpg?itok=yGHgYoXK",
-      "url": "https://github/cursos/css",
-      "amount": "40",
-      "teacher": "Profe CCCCAAAA",
-      "date": "07/02/2017",
-      "categories": [
-        "Frontend",
-        "Web",
-        "Diseño",
-        "Básico"
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Curso Programación Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/programacion-poster-720.jpg?itok=Rv3JEczq",
-      "url": "https://github/cursos/programacion",
-      "amount": "40",
-      "teacher": "Profe CCCCEEEWWW",
-      "date": "06/02/2017",
-      "categories": [
-        "Programación",
-        "Básico"
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Curso JavaScript Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/js-poster_6.jpg?itok=e4HRh45r",
-      "url": "https://github/cursos/javascript",
-      "amount": "40",
-      "teacher": "Profe CCCCYYYYY",
-      "date": "07/03/2017",
-      "categories": [
-        "Frontend",
-        "Web",
-        "Programación",
-        "Básico"
-      ]
-    },
-    {
-      "id": 17,
-      "name": "Curso Android Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/android-poster-720.jpg?itok=B8ECLZVA",
-      "url": "https://github/cursos/android",
-      "amount": "40",
-      "teacher": "Profe CCCCKKKKK",
-      "date": "06/03/2017",
-      "categories": [
-        "Mobile",
-        "Nativo",
-        "Programación",
-        "Básico"
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Curso Drupal 8 Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/drupal-poster-720.jpg?itok=XnaU4SBG",
-      "url": "https://github/cursos/drupal",
-      "amount": "40",
-      "teacher":"Profe CCCCMMMMM",
-      "date": "03/04/2017",
-      "categories": [
-        "Backend",
-        "Web",
-        "Programación",
-        "Herramientas",
-        "Frameworks",
-        "CMS",
-        "Básico"
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Curso React Desde Cero",
-      "poster": "https://github/sites/default/files/styles/large/public/courses/images/react-poster-720.jpg?itok=avZLRYlA",
-      "url": "https://github/cursos/react",
-      "amount": "40",
-      "teacher": "Profe CCCCYUUUUU",
-      "date": "04/04/2017",
-      "categories": [
-        "Frontend",
         "Web",
         "Programación",
         "Frameworks",

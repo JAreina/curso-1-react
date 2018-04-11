@@ -8,6 +8,7 @@ import SelectMultiple from './selectMultiple';
 import {categories, teachers} from '../../data';
 import 'pure-css/lib/forms.css'
 import 'pure-css/lib/buttons.css'
+import './cursos.css';
 // componente sin estado
 
 
@@ -51,7 +52,7 @@ const Cursos = (props)=>{
             
 
               <h1>LISTADO DE CURSOS</  h1>
-            <ul className="AuthForm">
+            <ul className="CoursesList">
           
                 {
                     
@@ -68,7 +69,7 @@ const Cursos = (props)=>{
                             amount={curso.amount}
                        />
                         )
-                    )
+                    ).reverse()
                 }
                
             </ul>

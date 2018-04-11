@@ -16,7 +16,7 @@ class LosCursos extends Component{
           
            this.state = {
                //cursos:cursos
-               cursos:[]
+               cursos:courses
            }
            this.addCurso = this.addCurso.bind(this);
            this.cargarCursos = this.cargarCursos.bind(this);
