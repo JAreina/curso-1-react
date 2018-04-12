@@ -8,7 +8,7 @@ import {categories,courses,teachers} from '../data/index';
 import $ from 'jquery';
 
 
-// componente con estado
+// componente PADRE DE : cursos,buscador ,listacursos
 
 class LosCursos extends Component{
         constructor(...props){
@@ -16,11 +16,21 @@ class LosCursos extends Component{
           
            this.state = {
                //cursos:cursos
-               cursos:courses
+               cursos:courses,
+               teachers:teachers,
+               categories:categories,
+               filter:{
+                   name:'',
+                   teacher:'',
+                   categories:[],
+                   search:''
+               }
            }
            this.addCurso = this.addCurso.bind(this);
            this.cargarCursos = this.cargarCursos.bind(this);
            this.resetCursos = this.resetCursos.bind(this);
+           this.onSearch = this.onSearch.bind(this);
+           this.manejarOnFilter = this.manejarOnFilter.bind(this);
         }
 
     addCurso(event){
@@ -33,7 +43,7 @@ class LosCursos extends Component{
                  name: formulario.name.value,
                  teacher: formulario.teacher.value,
                  date: formulario.date.value,
-                 categories:formulario.categoria.value,
+                 categories:formulario.categoria.value.split(","),
                  url:formulario.url.value,
                  amount:formulario.amount.value
              }
@@ -67,6 +77,21 @@ class LosCursos extends Component{
     }
 
 
+    //USADO EN BUSCADOR.JSX
+onSearch(e){
+        let newFilter = Object.assign({},this.state.filter, {[e.target.name] : [e.target.value]});
+        this.setState({
+            filter: newFilter
+        })
+
+        //console.log("busqueda" + this.state.filter)
+}
+manejarOnFilter(filter,datos){
+       let regex = new RegExp(filter.search,'i')
+       return datos.filter(q=>(regex.test(q.name) ||
+                                            regex.test(q.categories) ||
+                                            regex.test(q.teacher) ))
+}
         render(){
             if(!this.state.cursos.length){
                 return (
@@ -79,9 +104,11 @@ class LosCursos extends Component{
             }else{
                 return( 
                     <section>
+
                     <Cursos 
-                    cursos={this.state.cursos}
+                    cursos={this.manejarOnFilter(this.state.filter,this.state.cursos)}
                     addCurso={this.addCurso}//evento
+                    onSearch={this.onSearch}
                     />
                     <button onClick={this.resetCursos} className="pure-button pure-button-primary">BORRARR CURSOS</button>
                      </section>
@@ -96,7 +123,7 @@ LosCursos.propTypes = {
                     {id: PropTypes.string.isRequired,
                     name: PropTypes.string.isRequired,
                     teacher: PropTypes.string.isRequired,
-                categories:PropTypes.string.isRequired,
+                categories:PropTypes.arrayOf(PropTypes.string),
             url:PropTypes.string.isRequired,
         amount:PropTypes.string.isRequired}
                  )

@@ -9,6 +9,9 @@ import {categories, teachers} from '../../data';
 import 'pure-css/lib/forms.css'
 import 'pure-css/lib/buttons.css'
 import './cursos.css';
+
+
+import Buscador from './buscador.jsx';
 // componente sin estado
 
 
@@ -51,6 +54,10 @@ const Cursos = (props)=>{
             </form>
             
 
+
+ <Buscador onSearch={props.onSearch} />
+
+
               <h1>LISTADO DE CURSOS</  h1>
             <ul className="CoursesList">
           
@@ -67,6 +74,7 @@ const Cursos = (props)=>{
                             categories={curso.categories}
                             url={curso.url}
                             amount={curso.amount}
+                            poster={curso.poster}
                        />
                         )
                     ).reverse()
