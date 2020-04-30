@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^4.12.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "prop-types": "^15.6.1",
     "pure-css": "^1.0.4",
     "react": "^16.2.0",
